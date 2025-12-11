@@ -2,22 +2,19 @@ import java.net.InetAddress;
 import java.net.Inet4Address;
 import java.net.Inet6Address;
 import java.net.UnknownHostException;
-
 public class FourthUsingGetter {
-    private String ipAddress;     // property / field
+    private String ipAddress;   
 
-    // constructor sets ip
     public FourthUsingGetter(String ipAddress) {
         this.ipAddress = ipAddress;
     }
 
-    // getter (this returns the ip)
     public String getIpAddress() {
         return ipAddress;
     }
 
     public void checkIP() {
-        String ip = getIpAddress();  // calling the getter
+        String ip = getIpAddress();
 
         try {
             InetAddress address = InetAddress.getByName(ip);
@@ -35,7 +32,7 @@ public class FourthUsingGetter {
     }
 
     public static void main(String[] args) {
-        FourthUsingGetter obj = new FourthUsingGetter("192.168.88.91"); // creating object
-        obj.checkIP();   // calling method
+        FourthUsingGetter obj = new FourthUsingGetter("192.168.88.91"); 
+        obj.checkIP();   
     }
 }

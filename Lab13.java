@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 public class Lab13 {
     public static void main(String[] args) {
         try {
-            String uriString = "https://example.com:8080/path/to/resource?name=gopal&age=30#section1";
+            String uriString = "https://example.com:8080/path/to/resource?name=sachin&age=22#section1";
 
             URI uri = new URI(uriString);
 

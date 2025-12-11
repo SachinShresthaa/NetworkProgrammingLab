@@ -26,9 +26,6 @@ public class Lab8 {
 
         StringBuilder sb = new StringBuilder();
         for (byte b : mac) {
-            sb.append(String.format("%02X-", b));
-        }
-
         System.out.println("MAC Address: " + sb.substring(0, sb.length() - 1));
     }
 }
