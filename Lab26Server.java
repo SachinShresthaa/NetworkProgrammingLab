@@ -10,6 +10,7 @@ public class Lab26Server {
    public static void main(String[] args) {
         int port = 65432; // Port number
         try (ServerSocket serverSocket = new ServerSocket(port)) {
+            
             System.out.println("Server listening on port " + port);
             while (true) {
                 try (Socket clientSocket = serverSocket.accept();
